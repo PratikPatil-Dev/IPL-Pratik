@@ -1,0 +1,267 @@
+body {
+  background-color: #1a2131;
+  font-family: "Oswald", sans-serif;
+  margin: 5px 0 0;
+}
+
+#team-players a{
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Topbar */
+
+#topbar {
+  background: #1a2131;
+  padding: 1px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#topbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#topbar img {
+  width: 20px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-item {
+  margin: auto 10px;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav-item1 {
+  display: flex;
+  font-size: 12px;
+}
+
+.nav-item1 button {
+  margin: auto 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-item1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-items img {
+  width: 100px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+}
+
+#search-input {
+  width: 0;
+  padding: 5px 10px;
+  border: none;
+  background-color: #1a2131;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#search-input:focus {
+  width: 200px;
+}
+
+#search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+#main-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #f0f0f0; */
+}
+
+.main-hdg {
+  background-color: #2a3548;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+#team-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-image: url("/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85%;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  color: #f1f1f1;
+  width: 30%;
+}
+
+.left-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  letter-spacing: 0.6px;
+}
+
+.left-items span:first-child {
+  font-weight: 500;
+  border-bottom: 1px solid white;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.logo-cont img {
+  width: 300px;
+  height: auto;
+}
+
+.sub-hdg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Plyer Cards  */
+#team-players {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85%;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.player-card {
+  background-color: #f1f1f1d5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  margin: 20px auto;
+}
+
+.player-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.player-card h2 {
+  margin-bottom: 5px;
+}
+
+.player-card p {
+  margin-bottom: 5px;
+}
+
+/* Footer  */
+
+footer {
+  background-color: #1a2131;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#footer-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-item {
+  flex-basis: 30%;
+  font-weight: 400;
+  margin-left: 180px;
+}
+
+.footer-item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.footer-item p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/addPlayer.css" />
+    <script
+      src="https://kit.fontawesome.com/744ebb3139.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <title>IPL</title>
+  </head>
+  <body>
+    <!-- ##################### TopBar ################### -->
+    <div id="topbar">
+      <span class="top-left">
+        <a
+          href="https://www.bcci.tv/"
+          target="_blank"
+          class="topbar-links topbar-item"
+          ><img
+            src="https://www.iplt20.com/assets/images/BCCI_logo.png"
+            alt="BCCI Logo"
+          /><span class="topbar-item">BCCI.TV</span></a
+        >
+        <a href="https://www.wplt20.com/" target="_blank" class="topbar-item"
+          ><img
+            style="height: 22px; width: auto"
+            src="https://www.iplt20.com/assets/images/womens-premier-league-logo.svg"
+            alt="WPL Logo"
+        /></a>
+      </span>
+      <span class="top-right">
+        <span class="topbar-item">Follow Us</span>
+        <a
+          onclick="click_social(this)"
+          data-title="twitter"
+          href="https://twitter.com/IPL"
+          target="_blank"
+          class="topbar-item"
+        >
+          <img
+            src="https://www.iplt20.com/assets/images/new-twitter-icon.svg"
+            alt="twitter"
+          />
+        </a>
+        <a
+          onclick="click_social(this)"
+          data-title="instagram"
+          href="https://www.instagram.com/iplt20/"
+          target="_blank"
+          class="topbar-item"
+        >
+          <img
+            src="https://www.iplt20.com/assets/images/new-instagram-icon.svg"
+            alt="instagram"
+          />
+        </a>
+        <a
+          onclick="click_social(this)"
+          data-title="facebook"
+          href="https://www.facebook.com/IPL/"
+          target="_blank"
+          class="topbar-item"
+        >
+          <img
+            src="https://www.iplt20.com/assets/images/new-facebook-icon.svg"
+            alt="facebook"
+          />
+        </a>
+      </span>
+    </div>
+    <!-- ##################### Navbar ################### -->
+    <div id="navbar">
+      <div class="nav-items">
+        <a href="/index.html"
+          ><img
+            class="logo"
+            src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+            alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="marq">
+      <marquee
+        >IPL Season 2023 is over. Chennai Supper King won the title of this
+        season. Stay Tunned for next season. Next years season is likely to be
+        hold in April 2024.</marquee
+      >
+    </div>
+    <!--################## Main Container ############# -->
+    <div id="main-Container">
+      <h1>ADD A NEW PLAYER</h1>
+      <div id="card-container">
+        <div id="add-player">
+          <form id="playerDetails">
+            <p>Player Name</p>
+            <input id="playerName" type="text" name="playerName" placeholder="Enter player name here.." required>
+            <p>Price in Crore</p>
+            <input id="price" type="number" name="price" maxlength="2" placeholder="enter price for player.." required>
+            <p>Select Player playing</p>
+            <select id="playingStatus" type="text" name="isPlaying" placeholder="enter playing status here.." required> 
+                <option value="true">true</option>    
+                <option value="false">false</option>    
+            </select>
+            <p>Select Player Role</p>
+            <select id="role" type="text" name="role" required>
+                <option value="ALL-Rounder">ALL-Rounder</option>
+                <option value="Batsman">Batsman</option>
+                <option value="Bowler">Bowler</option>
+                </select>
+            <p>Player Image URL</p>
+            <input id="imageURL" type="text" name="playerimg" placeholder="Enter player image url.." required>
+            <p>Enter Player Team</p>
+            <select id="selectedTeam" type="text" name="teamSelect" required>
+
+
+            </select>
+            <br>
+            <button type="submit" id="submitBtn">Add Player</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <!--############### Footer #########################-->
+    <footer>
+      <div id="footer-container">
+        <div class="footer-item">
+          <h3>About</h3>
+          <p>All rights reserved. Designed by Pratik Patil.</p>
+        </div>
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <p>Email: pratikpatil0884@gmail.com</p>
+          <p>Phone: +91 90499 10616</p>
+        </div>
+        <div class="footer-item">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://twitter.com/IPL" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/iplt20/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/IPL/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/addPlayer.js"></script>
+  </body>
+</html>
